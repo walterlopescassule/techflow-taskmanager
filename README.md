@@ -1,18 +1,27 @@
-# TechFlow TaskManager 🚀
+# TechFlow TaskManager
 
-Sistema de gerenciamento de tarefas desenvolvido sob os princípios da Engenharia de Software para otimização dos fluxos operacionais de uma startup de logística.
+> Sistema CRUD de Gerenciamento de Tarefas Logísticas voltado para a otimização de fluxos operacionais em startups de logística.
 
-## 🎯 Objetivo e Escopo Inicial
-O objetivo do projeto é fornecer uma ferramenta visual e funcional de controle de tarefas (CRUD). O escopo original englobava a criação, listagem, atualização de status e exclusão de demandas logísticas cotidianas.
+## 🚀 Sobre o Projeto
+O **TechFlow TaskManager** foi concebido para centralizar e coordenar o ciclo de vida de tarefas operacionais, mitigando falhas de comunicação e provendo visibilidade em tempo real sobre o estado de cada demanda. O sistema foi robustecido com um atributo de priorização (`priority`) para destacar fretes emergenciais de alto impacto financeiro.
 
-## 🔄 Metodologia Ágil
-Adotou-se o uso do quadro Kanban via **GitHub Projects** para gerenciar o fluxo de desenvolvimento das tarefas divididas entre *To Do*, *In Progress* e *Done*, limitando gargalos e distribuindo a carga de trabalho do time.
+### 🛠️ Pilares de Engenharia Adotados
+*   **Metodologia Ágil:** Fluxo de trabalho gerenciado via quadro Kanban (GitHub Projects).
+*   **Controle de Versão:** Rastreabilidade incremental utilizando Git e a convenção *Conventional Commits*.
+*   **Qualidade & Integração Contínua (CI):** Testes unitários automatizados com `PyTest` e esteira de verificação integrada via `GitHub Actions`.
 
-## ⚠️ Gestão de Mudanças e Alteração de Escopo
-* **Justificativa:** Durante o acompanhamento do projeto, percebeu-se que fretes de caráter emergencial e de alto impacto financeiro se misturavam com entregas padrão.
-* **Nova Feature:** Inclusão do campo opcional de `priority` (Prioridade Crítica) na criação de tarefas para destacar visualmente os cards mais urgentes no painel.
+---
 
-## 🛠️ Como Executar os Testes Localmente
-1. Instale o PyTest através das dependências:
-   ```bash
-   pip install -r requirements.txt
+## 📦 Estrutura do Repositório
+*   `src/`: Contém toda a lógica de negócio e os módulos CRUD do sistema logístico.
+*   `tests/`: Agrupa a suíte de testes automatizados e asserções de validação.
+*   `.github/workflows/`: Configuração da esteira automatizada de build e testes.
+
+---
+
+## 🔧 Instalação e Execução Local
+
+### 1. Clonar o Repositório
+```bash
+git clone [https://github.com/walterlopescassule/techflow-taskmanager.git](https://github.com/walterlopescassule/techflow-taskmanager.git)
+cd techflow-taskmanager
